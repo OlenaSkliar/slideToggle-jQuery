@@ -1,0 +1,46 @@
+.none{
+    display: none!important
+}
+.tabs-container{
+    padding: 40px
+}
+.tabs{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.tab{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 10px
+}
+.tab .icons{
+    position: relative;
+    width: 16px;
+    height: 14px;
+    margin-right: 8px
+}
+.tab .icons img{
+    position: absolute
+}
+.tab .icons img:nth-child(2){
+    opacity: 0
+}
+.tab.active >div{
+    color: #2469B0
+}
+.tab.active .icons img:nth-child(1){
+    opacity: 0
+}
+.tab.active .icons img:nth-child(2){
+    opacity: 1
+}
+.tab .heading{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #343435;
+    color: #2469B0
+}
